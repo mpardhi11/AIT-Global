@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="kk"><p id="loops" ></p></div>
+    <p>2. Print the numbers 1 - 10, each number being a different color.
+    </p>
+    <script>
+        function generateRandomColor()
+        {
+        var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+        return randomColor;
+        }
+        for(let i=1;i<=10;i++) {
+            document.getElementById("kk").innerHTML+=i+"<br>";
+            
+        }
+        kk.style.color = generateRandomColor();
+        </script>
+</body>
+</html>

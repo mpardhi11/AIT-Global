@@ -17,3 +17,7 @@ table
 th{
     background-color: rgb(231, 229, 229);
 }
+caption {
+    padding-bottom: 10px; 
+    font-size: 20px;
+}
