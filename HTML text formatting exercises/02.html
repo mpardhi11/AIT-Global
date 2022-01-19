@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>2. Prints 10 names with a line break between each name. The list should be alphabetized, and to do this place a subscripted number next to each name based on where it will go in the alphabetized list. (Example: Alan1). Print first, the unalphabetized list with a subscript number next to each name, then the alphabetized list. Both lists should have an <h1> level heading.</h2>
+
+        <h3>alphabetized list</h3>
+        <p id="arr"></p>
+        <h3>unalphabetized list</h3>
+        <p id="arr2"></p>
+        <script>
+            var months = ['jan','feb','mar','apr','may','jun','jul','aug','sept','oct','nov','dec'];
+            for(let i=0;i<months.length;i++) {
+                let j= new String(i);
+                let x= j.sub();
+                document.write(months[i]+""+x+"<br>");
+
+                let z=months[i]+""+x+"<br>";
+            }
+
+            months.sort();
+            var z='';
+            for(let i=0;i<months.length;i++) {
+                let j= new String(i);
+                let x= j.sub();
+                // document.write(months[i]+""+x+"<br>");
+                z+= months[i]+""+x+"<br>";    
+            }
+            document.getElementById("arr").innerHTML=z;
+        </script>        
+</body>
+</html>
