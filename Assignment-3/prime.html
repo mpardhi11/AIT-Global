@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const prime = Number(prompt("MMMm"));
+
+      if (prime > 1) {
+        if (prime == 2) {
+          window.alert("Numer is prime" + prime);
+        } else {
+          let count = 0;
+          for (let i = 2; i < prime; i++) {
+            if (Math.round(prime % i == 0)) {
+              count++;
+              break;
+            }
+          }
+          if (count == 0) {
+            window.alert("Numer is  prime : -" + prime);
+          } else {
+            window.alert("Numer is Not prime" + prime);
+          }
+        }
+      } else {
+        window.alert("Numer is Not prime" + prime);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

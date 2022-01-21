@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function Swap() {
+        var a = Number(document.getElementById(1).value);
+        var b = Number(document.getElementById(2).value);
+        [a, b] = [b, a];
+
+        document.getElementById("ans1").value = a;
+        document.getElementById("ans2").value = b;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>4. WAP to Swap two Numbers</h1>
+    <br />
+    <hr />
+
+    <h2>Enter 1<sup>st</sup>Number <input type="text" id="1" /></h2>
+    <h2>Enter 2<sup>nd</sup>Number <input type="text" id="2" /></h2>
+    <br />
+    <button onclick="Swap()" style="font-size: xx-large">Swap Numbers</button
+    ><br />
+    <!-- <br /><br /> -->
+    <h2>After Swap 1<sup>st</sup>Number <input type="text" id="ans1" /></h2>
+    <h2>After Swap 2<sup>nd</sup>Number <input type="text" id="ans2" /></h2>
+  </body>
+</html>

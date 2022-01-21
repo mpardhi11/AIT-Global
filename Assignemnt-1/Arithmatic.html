@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function arith() {
+        var a = Number(prompt("Enter 1st Number : "));
+        var b = Number(prompt("Enter 2nd Number : "));
+        document.getElementById("sum").innerHTML = a + b;
+        document.getElementById("sub").innerHTML = a - b;
+        document.getElementById("mul").innerHTML = a * b;
+        document.getElementById("div").innerHTML = a / b;
+        document.getElementById("MOD").innerHTML = a % b;
+        a++;
+        b--;
+        document.getElementById("inc").innerHTML = a;
+        document.getElementById("dec").innerHTML = b;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>1. WAP to Perform all Arithmatic Operation</h1>
+    <br /><br />
+    <hr />
+    <button onclick="arith()">Arithmatic function</button>
+    <h3 id="sum">Addition</h3>
+    <h3 id="sub">Substractin</h3>
+    <h3 id="mul">Multiplication</h3>
+    <h3 id="div">Division</h3>
+    <h3 id="MOD">MOD</h3>
+    <h3 id="inc">inc</h3>
+    <h3 id="dec">dec</h3>
+  </body>
+</html>

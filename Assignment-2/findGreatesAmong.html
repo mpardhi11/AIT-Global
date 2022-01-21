@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var x = function () {
+        let a = Number(document.getElementById("one").value);
+        let b = Number(document.getElementById("two").value);
+        let c = Number(document.getElementById("three").value);
+
+        // let d= c > (a > b ? a : b) ? c : a > b ? a : b;
+        document.getElementById("result").innerHTML =
+          c > (a > b ? a : b) ? c : a > b ? a : b;
+      };
+    </script>
+  </head>
+  <body>
+    <input type="text" id="one" value="15" />
+    <input type="text" id="two" value="155" />
+    <input type="text" id="three" value="5" />
+    <br /><br />
+    <button onclick="x()">Calculate</button>
+    <h3 id="result">Result</h3>
+  </body>
+</html>

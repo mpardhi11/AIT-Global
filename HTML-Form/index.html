@@ -1,48 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body {
-            background-image: url(img/Cast_Validity_Application.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding-left: 20px;
-            padding-right: 20px;
-            border: 2px solid black;
-
-        }
-        #head{
-            margin: auto;
-            text-align: center;
-            border: 2px solid black;
-            border-collapse: collapse;
-            padding: 20px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-family: 'Segoe UI', Tahoma;
-            background-color: gainsboro;
-            /* margin: 0%; */
-        }
-        #blue{
-            background-color: lightskyblue;
-            color: white;
-            /* text-align: center; */
-            padding: 2px;
-            margin: 0%;
-        }
+      body {
+        background-image: url(img/Cast_Validity_Application.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 2px solid black;
+      }
+      #head {
+        margin: auto;
+        text-align: center;
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: "Segoe UI", Tahoma;
+        background-color: gainsboro;
+        /* margin: 0%; */
+      }
+      .blue {
+        background-color: #3498db;
+        color: black;
+        /* text-align: center; */
+        padding: 10px;
+        margin: 0%;
+        border-radius: 10px;
+      }
+      th {
+        text-align: left;
+        font-size: 15px;
+      }
     </style>
-</head>
-<body>
-    <div id="head">
-        <strong>Form 6</strong>
-        <br>
-        <strong>[See rules 13(1) and 26]</strong>
-    </div>
-    <div id="blue"><p>Application for Inclusion of Name in Electoral Roll for First time Voter OR on Shifting from One Constituency to Another Constituency.</p></div>
-    <img src="img/Cast_Validity_Application.jpg" alt="" style=" max-width: 50%;">
-</body>
+  </head>
+  <body>
+    <table style="width: 100%">
+      <form action="">
+        <div id="head">
+          <strong>Form 6</strong>
+          <br />
+          <strong>[See rules 13(1) and 26]</strong>
+        </div>
+        <div class="blue">
+          <p>
+            Application for Inclusion of Name in Electoral Roll for First time
+            Voter OR on Shifting from One Constituency to Another Constituency.
+          </p>
+        </div>
+        <div>
+          <label for=""> To,</label>
+        </div>
+        <div><label for="">The Electoral Registration Officer </label></div>
+        <div>
+          <tr>
+            <th>State *</th>
+            <td>
+              <select name="States" id="">
+                <option value="MH">MH</option>
+              </select>
+            </td>
+            <td>
+              DistList
+              <select name="distList">
+                <option value="0">Select</option>
+                <option value="36">Palghar</option>
+                <option value="1">Nandurabar</option>
+                <option value="3">Jalgaon</option>
+                <option value="5">Akola</option>
+                <option value="7">Amaravati</option>
+                <option value="9">Nagpur</option>
+                <option value="11">Gondiya</option>
+                <option value="13">Chandrapur</option>
+                <option value="15">Nanded</option>
+                <option value="17">Parbhani</option>
+                <option value="19">Aurangabad</option>
+                <option value="21">Thane</option>
+                <option value="23">Mumbai City</option>
+                <option value="25">Pune</option>
+                <option value="27">Beed</option>
+                <option value="29">Osmanabad</option>
+                <option value="31">Satara</option>
+                <option value="33">Sindhudurg</option>
+                <option value="35">Sangli</option>
+                <option value="2">Dhule</option>
+                <option value="4">Buldhana</option>
+                <option value="6">Washim</option>
+                <option value="8">Wardha</option>
+                <option value="10">Bhandara</option>
+                <option value="12">Gadchiroli</option>
+                <option value="14">Yavatmal</option>
+                <option value="16">Hingoli</option>
+                <option value="18">Jalna</option>
+                <option value="20">Nashik</option>
+                <option value="22">Mumbai Suburban</option>
+                <option value="24">Raigad</option>
+                <option value="26">Ahmednagar</option>
+                <option value="28">Latur</option>
+                <option value="30">Solapur</option>
+                <option value="32">Ratnagiri</option>
+                <option value="34">Kolhapur</option>
+              </select>
+            </td>
+          </tr>
+        </div>
+        <br /><br />
+        <hr />
+      </form>
+      <br />
+      <div>
+        I request that my name be included in the electoral roll for the
+        Constituency in which my place of residence, as per the particulars
+        furnished below in (j) below
+      </div>
+      <div class="blue">
+        Particulars in support of my claim for inclusion in the electoral roll
+        are given below:
+      </div>
+      <tr>
+        <th>a) Name *</th>
+        <td>
+          <input
+            type="text"
+            required
+            placeholder="Name + Middle Name in English"
+          />
+        </td>
+      </tr>
+      <tr>
+        <th>b) Surname (If any)</th>
+        <td><input type="text" required placeholder="Surname in English" /></td>
+      </tr>
+      <tr>
+        <th>c)Name of relative *</th>
+        <td><input type="text" required placeholder="Husband or father " /></td>
+      </tr>
+      <tr>
+        <th>d) Last Name of relative</th>
+        <td>
+          <input
+            type="text"
+            required
+            placeholder="Husband or father Last Name"
+          />
+        </td>
+      </tr>
+      <tr>
+        <th>Relation *</th>
+        <td>
+          <select name="Relation" id="" required>
+            <option value="0">Select</option>
+            <option value="1">Father</option>
+            <option value="2">Husband</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>e) Date of Birth *</th>
+        <td><input type="date" max="2018-01-01" />D.O.B.</td>
+      </tr>
+    </table>
+    <div class="blue">f) Place of Birth Details</div>
+  </body>
 </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function getPer() {
+        var name = document.getElementById("name1").value;
+        var s1 = Number(document.getElementById("s1").value);
+        var s2 = Number(document.getElementById("s2").value);
+        var s3 = Number(document.getElementById("s3").value);
+        var s4 = Number(document.getElementById("s4").value);
+        var s5 = Number(document.getElementById("s5").value);
+        var totalmarks = s1 + s2 + s3 + s4 + s5;
+        var percentage = parseFloat((totalmarks / 500) * 100);
+        document.getElementById("gerRes").innerHTML =
+          name + " Got " + percentage;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>3.</h1>
+    <br />
+    <hr />
+    <br />
+    <form action="">
+      <table>
+        <caption>
+          Enter Student Name and Five Subject Marks
+        </caption>
+        <tr>
+          <th>Name</th>
+          <td><input type="text" placeholder="Full Name" id="name1" /></td>
+        </tr>
+        <tr>
+          <th>Subject_1</th>
+          <td><input type="text" placeholder="Subject_1 Marks" id="s1" /></td>
+        </tr>
+        <tr>
+          <th>Subject_2</th>
+          <td><input type="text" placeholder="Subject_2 Marks" id="s2" /></td>
+        </tr>
+        <tr>
+          <th>Subject_3</th>
+          <td><input type="text" placeholder="Subject_3 Marks" id="s3" /></td>
+        </tr>
+        <tr>
+          <th>Subject_4</th>
+          <td><input type="text" placeholder="Subject_4 Marks" id="s4" /></td>
+        </tr>
+        <tr>
+          <th>Subject_5</th>
+          <td><input type="text" placeholder="Subject_5 Marks" id="s5" /></td>
+        </tr>
+      </table>
+    </form>
+    <button onclick="getPer()">Calculate</button>
+    <h3 id="gerRes"></h3>
+  </body>
+</html>

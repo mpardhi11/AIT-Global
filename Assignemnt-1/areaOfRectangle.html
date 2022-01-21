@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function cal() {
+        var l = Number(prompt("Enter a Length"));
+        var b = Number(prompt("Enter a Breath"));
+        document.getElementById("ans2").innerText = 2 * (l + b);
+        console.log(2 * (l + b));
+      }
+    </script>
+  </head>
+  <body>
+    <h1>2. WAP to find area of Rectangle</h1>
+    <hr />
+    <br /><br />
+
+    <h2>Area of Rectangle : <span id="ans2"></span></h2>
+    <button onclick="cal()" style="font-size: xx-large">Calculate</button>
+  </body>
+</html>

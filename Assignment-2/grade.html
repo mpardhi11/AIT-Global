@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function grade() {
+        var percentage = parseFloat(Number(prompt("enter percentage")));
+        if (percentage >= 90 && percentage <= 100) {
+          document.write("Excellent: Grade A");
+        } else if (percentage < 90 && percentage >= 80) {
+          document.write("Very Good: Grade B");
+        } else if (percentage < 80 && percentage >= 70) {
+          document.write("Good: Grade C");
+        } else if (percentage < 70 && percentage >= 60) {
+          document.write("Satisfactory: Grade D");
+        } else if (percentage < 60 && percentage >= 50) {
+          document.write("Work Hard: Grade E");
+        } else if (percentage < 50 && percentage >= 40) {
+          document.write("Just Passed: Grade F");
+        } else {
+          document.write("Failed!");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="grade()">Greade</button>
+  </body>
+</html>
