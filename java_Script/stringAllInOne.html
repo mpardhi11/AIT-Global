@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Operation Regarding String</title>
+  </head>
+  <body>
+    <script>
+      var name = "Mohit"; // Double quote
+      var f_Name = "Mohit Pardhi"; // Single quote
+
+      document.write(name);
+      document.write("<br>");
+      document.write(f_Name);
+      document.write("<br>");
+
+      var str1 = "it's Fine Mohit";
+      var str2 = 'Hello My Name is "Mohit Pardhi"';
+      var str3 = "He said 'Welcome to CHAOS'...... org";
+      document.write(str1);
+      document.write("<br>");
+      document.write(str2);
+      document.write("<br>");
+      document.write(str3);
+      document.write("<br>");
+      //--------------------------------------------
+      var str1 = "it's Fine Mohit";
+      var str2 = 'Hello My Name is "Mohit Pardhi"';
+      var str3 = "He said 'Welcome to CHAOS'...... org";
+      document.write(str1);
+      document.write("<br>");
+      document.write(str2);
+      document.write("<br>");
+      document.write(str3);
+      document.write("<br>");
+      //       However, you can still use single quotes inside a single quoted strings or double quotes inside double quoted strings by escaping the quotes with a backslash character (\), like this:
+
+      // ExampleTry this code »
+      // var str1 = 'it\'s okay';
+      // var str2 = "He said \"Goodbye\"";
+      // var str3 = 'She replied \'Calm down, please\'';
+      // The backslash (\) is called an escape character, whereas the sequences \' and \" that we've used in the example above are called escape sequences.
+
+      var str1 = 'Hello My Name is "Mohit Pardhi"';
+      document.write(
+        str1 +
+          " [Length ------------->>>>>> ] : " +
+          str1.length +
+          " Caharacter "
+      );
+      document.write("<br>");
+
+      var str1 =
+        "Hello My Name is Mohit Pardhi, Mohit Pardhi, Mohit Pardhi, Mohit Pardhi";
+      document.write(str1.indexOf("Mohit Pardhi"));
+      document.write("<br>");
+
+      document.write(str1.lastIndexOf("Mohit Pardhi"));
+      document.write("<br>");
+      document.write(str1.indexOf("Rohit Pardhi"));
+      document.write("<br>");
+      document.write(str1.lastIndexOf("Rohit Pardhi"));
+      document.write("<br>");
+
+      document.write(str1.indexOf("Pardhi", 20));
+      document.write("<br>");
+
+      document.write(str1.slice(10, 25));
+      document.write("<br>");
+      document.write(str1.replace("Mohit", "Rohit"));
+      document.write("<br>");
+      document.write(str1.replace(/Mohit/gi, "Shohit"));
+      var st = "Documents!!!!";
+      document.write("<br>");
+      document.write(st[st.length - 1]); // Prints: !
+      document.write("<br>");
+      document.write(st[st.length]); // Prints: !
+      document.write("<br>");
+      document.write(st.charAt(5));
+
+      document.write("<br>");
+      document.write("---------------->>>>>" + st.charAt(st.length));
+
+      var fruitsStr = "Apple, Banana, Mango, Orange, Papaya";
+      var fruitsArr = fruitsStr.split(", ");
+      document.write(fruitsArr[0] + "<br>"); // Prints: Apple
+      document.write(fruitsArr[2] + "<br>"); // Prints: Mango
+      document.write(fruitsArr[fruitsArr.length - 1]); // Prints: Papaya
+      document.write("<hr>");
+
+      // Loop through all the elements of the fruits array
+      for (var i in fruitsArr) {
+        document.write("<p>" + fruitsArr[i] + "</p>");
+      }
+      document.write("<hr>"); // Prints: N
+
+      var str = "INTERSTELLAR";
+      var strArr = str.split("");
+      document.write(strArr[0] + "<br>"); // Prints: I
+      document.write(strArr[1] + "<br>"); // Prints: N
+      document.write(strArr[strArr.length - 1]); // Prints: R
+      document.write("<hr>"); // Prints: N
+
+      // Loop through all the elements of the characters array and print them
+      for (var i in strArr) {
+        document.write("<br>" + strArr[i]);
+      }
+    </script>
+  </body>
+</html>

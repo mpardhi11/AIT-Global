@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Creating variables
+      var x = 10;
+      var y = 20;
+      var z = "30";
+
+      // Adding a number with a number, the result will be sum of numbers
+      document.write(x + y); // 30
+      document.write("<br>");
+
+      // Adding a string with a string, the result will be string concatenation
+      document.write(z + z); // '3030'
+      document.write("<br>");
+
+      // Adding a number with a string, the result will be string concatenation
+      document.write(x + z); // '1030'
+      document.write("<br>");
+
+      // Adding a string with a number, the result will be string concatenation
+      document.write(z + x); // '3010'
+      document.write("<br>");
+
+      // Adding strings and numbers, the result will be string concatenation
+      document.write("The result is: " + x + y); // 'The result is: 1020'
+      document.write("<br>");
+
+      // Adding numbers and strings, calculation performed from left to right
+      document.write(x + y + z); // 'The result is: 3030'
+      // Creating variables
+      var x = 10;
+      var y = 20;
+      var z = "30";
+
+      // Subtracting a number from a number
+      document.write(y - x); // 10
+      document.write("<br>");
+
+      // Subtracting a number from a numeric string
+      document.write(z - x); // 20
+      document.write("<br>");
+
+      // Multiplying a number with a numeric string
+      document.write(x * z); // 300
+      document.write("<br>");
+
+      // Dividing a number with a numeric string
+      document.write(z / x); // 3
+      // Creating variables
+      var x = 10;
+      var y = 20;
+      var z = "30";
+
+      // Subtracting a number from a number
+      document.write(y - x); // 10
+      document.write("<br>");
+
+      // Subtracting a number from a numeric string
+      document.write(z - x); // 20
+      document.write("<br>");
+
+      // Multiplying a number with a numeric string
+      document.write(x * z); // 300
+      document.write("<br>");
+
+      // Dividing a number with a numeric string
+      document.write(z / x); // 3
+      // Creating variables
+      var x = 10;
+      var y = "foo";
+      var z = NaN;
+
+      // Subtracting a number from a non-numeric string
+      document.write(y - x); // NaN
+      document.write("<br>");
+
+      // Multiplying a number with a non-numeric string
+      document.write(x * y); // NaN
+      document.write("<br>");
+
+      // Dividing a number with a non-numeric string
+      document.write(x / y); // NaN
+      document.write("<br>");
+
+      // Adding NaN to a number
+      document.write(x + z); // NaN
+      document.write("<br>");
+
+      // Adding NaN to a string
+      document.write(y + z); // fooNaN
+    </script>
+  </body>
+</html>
